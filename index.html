@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Список задач</h1>
+    </header>
+
+    <main>
+        <form autocomplete="off">
+            <label>
+                <input id="new-todo" name="todo" type="text" placeholder="new todo" />
+            </label>
+            <select id="user-todo" name="user">
+                <option value="0">Выбрать пользователя</option>
+            </select>
+            <button>Добавить задачу</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </main>
+</body>
+
+</html>
