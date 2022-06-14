@@ -185,7 +185,7 @@
     // изменить статус задачи
     async function toggleStatus(todoId, completed) {
         try {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/todos2/${todoId}`, {
+            const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId}`, {
                 method: 'PATCH',
                 body: JSON.stringify({ completed }),
                 headers: {
